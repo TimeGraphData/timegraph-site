@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Official information about the planned TimeGraphBot crawler, including its purpose, access rules, and opt-out contact.">
+  <title>TimeGraphBot — TimeGraph</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../" aria-label="TimeGraph home">TimeGraph<span class="brand-mark" aria-hidden="true">.</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="../">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-intro container" aria-labelledby="page-title">
+      <p class="eyebrow">Crawler information</p>
+      <h1 id="page-title">TimeGraphBot<span class="accent">.</span></h1>
+      <p class="lead">TimeGraphBot is the planned crawler for TimeGraph, a project in development that researches publicly accessible information and builds a structured temporal history of public data.</p>
+    </section>
+
+    <section class="section-divider" aria-labelledby="behavior-title">
+      <div class="container narrow">
+        <h2 id="behavior-title">How TimeGraphBot is intended to operate</h2>
+        <ul class="principles">
+          <li>Visits publicly accessible web pages and resources needed for the project.</li>
+          <li>Does not authenticate or attempt to bypass access controls.</li>
+          <li>Does not bypass CAPTCHA or web application firewalls (WAF).</li>
+          <li>Respects <code>robots.txt</code> directives.</li>
+          <li>Uses intentional rate limits to avoid unnecessary load.</li>
+          <li>Accepts exclusion and opt-out requests from website operators.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="focus-section container narrow" aria-labelledby="identity-title">
+      <p class="eyebrow">Identification</p>
+      <h2 id="identity-title">User-Agent</h2>
+      <p>Planned User-Agent string:</p>
+      <p class="code-block"><code>TimeGraphBot/0.3 (+https://timegraph.it/crawler)</code></p>
+      <p>The URL in this identifier is the planned crawler information address. This page is available on GitHub Pages while the custom domain is not yet configured.</p>
+    </section>
+
+    <section class="section-divider" aria-labelledby="contact-title">
+      <div class="container narrow contact-section">
+        <p class="eyebrow">Contact / Opt-out</p>
+        <h2 id="contact-title">Request an exclusion</h2>
+        <p>Website operators can request that TimeGraphBot exclude their site or specific resources. Please include the relevant URL and your request.</p>
+        <a class="contact-link" href="mailto:crawler@timegraph.it">crawler@timegraph.it</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>TimeGraph · Project in development</span>
+      <a href="../">Back to home</a>
+    </div>
+  </footer>
+</body>
+</html>
